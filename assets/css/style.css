@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(250,244,240);
+    color: rgb(23,58,92);
+    line-height: 25px;
+}
+span{
+    color: rgb(255,103,0);
+}
+header{
+    display: grid;
+    grid-template-columns: 400px 1fr 300px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+.navBarLogo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    img{
+        width: 100px;
+    }
+    .navBarLogoText h3{
+            margin: 10px;
+            font-size: 1.1rem;
+    }
+}
+.navBarDivider{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    li{
+    list-style: none;
+        a{
+            text-decoration: none;
+            color: rgb(123,122,115);
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+}
+.navBarButtons{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    gap: 20px;
+}
+.navBarButtons button{
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.signUpButton{
+    background-color: transparent;
+}
+.loginButton{
+    background-color: rgba(26,57,90);
+    color: white;
+}
+section{
+    margin:50px 0;
+    padding: 0 120px;
+}
+.firstHeroSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 80px;
+    .heroButton{
+        justify-content: start;
+    }
+    div{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        line-height: 50px;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        line-height: 30px;
+        margin-bottom: 90px;
+    }
+}
+.secondHeroContent img{
+    border-radius: 30px;
+}
+.heroButton button{
+    padding: 20px 40px;
+    border-radius: 60px;
+}
+.heroButton .signUpButton{
+    background-color: white;
+}
+.firstSubHeroContent{
+    display: flex;
+    align-items: center;
+}
+.firstSubHeroContent .logo{
+    width: 15%;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 25px;
+    background-color: white;
+    text-align: center;
+}
+.firstSubHeroContent .text h4:nth-child(1){
+    font-weight: light;
+    margin-bottom: 5px;
+}
+.firstSubHeroContent .text h4:nth-child(2){
+    font-size: 25px;
+}
+.secondSubHeroContent{
+    display: flex;
+    gap: 40px;
+}
+.sectionDivider{
+    border-bottom: 2px solid rgb(221, 219, 204);
+    padding: 20px 0;
+    grid-column: 1/3;
+}
+
+.secondHeroSection .heroTitle{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.secondHeroContent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.secondHeroContent .card{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    div{
+        margin-bottom: 30px;
+    }
+}
+
+.card .cardImage{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.card .cardTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card .cardDescription{
+    font-size: 1rem;
+    color: rgb(255,103,0);
+    font-weight: bold;
+}
