@@ -865,7 +865,13 @@ section {
             width: 20px;
         }
     }
+    .fourthContentInfo{
+        margin: 10px 0;
+    }
     .fifthSection{
+        padding: 1rem;
+    }
+    .siteFooter{
         padding: 1rem;
     }
 }
