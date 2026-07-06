@@ -478,6 +478,7 @@ section {
     background: white;
     padding: 12px 16px;
     border-radius: 999px;
+    justify-content: space-between;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
@@ -589,9 +590,6 @@ section {
     section {
         padding: 0 60px;
     }
-
-    .firstHeroSection,
-    .secondHeroSection .secondHeroContent,
     .thirdSectionContent,
     .fourthSection,
     .newsGrid,
@@ -618,10 +616,14 @@ section {
     }
 
     .secondHeroSection .secondHeroContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
     .secondHeroSection .secondHeroContent .card {
+        width: 50vw;
         height: auto;
     }
 
@@ -668,14 +670,10 @@ section {
     }
 
     .subscribeForm {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .subscribeForm input {
-        width: 100%;
-        max-width: 420px;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        justify-self: center;
     }
 
     .siteFooter {
@@ -782,13 +780,33 @@ section {
     .subscribeForm button {
         width: 100%;
     }
-
-    .footerTop {
+    .fifthSection{
+        padding: 20px 0;
+    }
+    .footerTop,.footerBottom {
         grid-template-columns: 1fr;
+    }
+    .footerBottom p{
+        margin: 30px 0;
+    }
+    .footerSocialLink{
+        justify-self: start;
+    }
+    
+    .footerInfo h3{
+        font-size: 16px;
+    }
+    .footerSocialLink{
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 576px) {
+     .firstHeroSection{
+        display: flex;
+        flex-direction: column;
+    }
     .navBarLogo {
         flex-direction: column;
         align-items: flex-start;
@@ -820,6 +838,10 @@ section {
         font-size: 1.1rem;
         margin-bottom: 50px;
     }
+    .secondHeroSection .secondHeroContent .card {
+        width: 100vw;
+        height: auto;
+    }
     .secondHeroContent{
         img{
             width: 100%;
@@ -836,7 +858,7 @@ section {
     }
 
     .subscribeForm input {
-        width: 100%;
+        width: 200px;
     }
     .cardTitle{
         img{
