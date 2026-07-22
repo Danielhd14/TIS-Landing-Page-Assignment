@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.aboutPage {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.aboutSection {
+    width: min(1180px, 100%);
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(23, 58, 92, 0.08);
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(13, 40, 70, 0.12);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.eyebrow {
+    color: rgb(255, 103, 0);
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.aboutContent h1 {
+    font-size: clamp(1.9rem, 3vw, 3rem);
+    line-height: 1.2;
+    color: rgb(23, 58, 92);
+}
+
+.aboutContent p {
+    line-height: 1.8;
+    color: rgba(23, 58, 92, 0.8);
+    max-width: 560px;
+}
+
+.aboutActions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.primaryButton,
+.secondaryButton {
+    text-decoration: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+    background: rgb(23, 58, 92);
+    color: white;
+}
+
+.secondaryButton {
+    background: white;
+    color: rgb(23, 58, 92);
+    border: 1px solid rgba(23, 58, 92, 0.12);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    transform: translateY(-2px);
+}
+
+.aboutStats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 0.4rem;
+}
+
+.aboutStats div {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.9rem;
+    border-radius: 16px;
+    border: 1px solid rgba(23, 58, 92, 0.08);
+}
+
+.aboutStats strong {
+    display: block;
+    color: rgb(255, 103, 0);
+    font-size: 1.1rem;
+}
+
+.aboutStats span {
+    font-size: 0.9rem;
+    color: rgba(23, 58, 92, 0.8);
+}
+
+.aboutVisual {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.aboutVisual img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+.floatingCard {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.floatingCard h3 {
+    color: rgb(23, 58, 92);
+    margin-bottom: 0.4rem;
+}
+
+.floatingCard p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(23, 58, 92, 0.8);
+}
+
+@media (max-width: 900px) {
+    .aboutSection {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .aboutVisual {
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPage {
+        padding: 1rem;
+    }
+
+    .aboutSection {
+        padding: 1.2rem;
+        border-radius: 20px;
+    }
+
+    .aboutActions {
+        flex-direction: column;
+    }
+
+    .aboutStats {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutVisual img {
+        min-height: 280px;
+    }
+}
