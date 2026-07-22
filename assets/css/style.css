@@ -129,6 +129,10 @@ section {
     padding: 20px 40px;
     border-radius: 60px;
 }
+.heroButton .loginButton{
+    background-color: rgb(23, 58, 92);
+    color: white;
+}
 
 .heroButton .signUpButton {
     background-color: white;

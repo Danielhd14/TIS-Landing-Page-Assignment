@@ -1,0 +1,207 @@
+/* GENERAL STYLING MOSTLY MADE FOR INDEX.HTML */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins/Poppins-Black.ttf') format('ttf'),
+         url('../font/Poppins/Poppins-Bold.ttf') format('ttf');
+}
+body,.firstSection{
+    font-family: 'Poppins', sans-serif;
+}
+/*STYLING THE SECTION*/
+.firstSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*RIGHT SECTION BACKGROUND*/
+.backgroundImage{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(../img/oilRig.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px 0px 0px 50px;
+}
+
+/*MAIN FORM OF THE PAGE*/
+.heroForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formSign{
+    width: 80%;
+    padding: 100px 0;
+    .formTitle{
+        margin-bottom: 4rem;
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 14px;
+        }
+    }
+
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    label{
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+.passwordLabel{
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+input{
+   height: 35px;
+   padding: 10px 0px 10px 10px;
+   border-radius: 10px;
+   border: 1px solid #D9D9D9;
+   font-size: 12px;
+   color: black;
+}
+.input:placeholder-shown{
+    color: D9D9D9;
+}
+.agreementBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    label{
+        font-size: 10px;
+    }
+}
+.signUpButton{
+    border: none;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #195f59;
+    color: white;
+    font-weight: bolder;
+}
+.orDivision{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    p{
+        margin: 0 10px;
+    }
+}
+.division{
+    width: 60%;
+    height: 3px;
+    background-color: #d3d3d3;
+}
+.signInAlt{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.signInWith{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 40%;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.loginLink{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.loginLink a{
+    text-decoration: none;
+    color: #0F3DDE;
+}
+.loginLink h4{
+    margin-top: 40px;
+    a{
+        color: blueviolet;
+    }
+}
+/* FORGOT PASSWORD PAGE*/
+.notice{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0 0;
+}
+@media screen and (max-width:780px){
+    .firstSection{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        background-image: url(../img/leafBackground.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+    .formSign{
+        padding:50px;
+        background-color: rgba(255, 255, 255, 0.99);
+        border-radius: 50px;
+    }
+    .backgroundImage{
+        display: none;
+    }
+    .signInWith{
+        width: 80%;
+        padding: 5px 5%;
+    }
+
+}
+@media screen and (max-width:425px){
+    .firstSection{
+        min-height: auto;
+    }
+    .formSign{
+        padding: 50px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .signInAlt{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .signInWith{
+        width: 70%;
+        padding: 5px 5%;
+    }
+}
+@media screen and (max-width:375px){
+    .formSign{
+        padding: 30px;
+    }
+    .signInWith{
+        width: 80%;
+        padding: 5px 5%;
+    }
+}
+
