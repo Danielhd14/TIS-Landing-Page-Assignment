@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIS</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -19,25 +20,25 @@
         <div class="navLinks">
             <nav>
                 <ul>
-                    <li><a href="#"><span>HOME</span></a></li>
+                    <li><a href="#firstHeroSection"><span>HOME</span></a></li>
                     <div class="navBarDivider"></div>
-                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#secondHeroSection">COURSES</a></li>
                     <div class="navBarDivider"></div>
-                    <li><a href="#">SERVICES OFFERS </a></li>
+                    <li><a href="#thirdHeroSection">SERVICES OFFERS </a></li>
                     <div class="navBarDivider"></div>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./assets/pages/about.html">ABOUT</a></li>
                     <div class="navBarDivider"></div>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
         <div class="navBarButtons">
-            <button class="signUpButton">SIGN UP</button>
-            <button class="loginButton">LOGIN</button>    
+            <button class="signUpButton" onclick="window.location.href='./assets/pages/signIn.html'">SIGN UP</button>
+            <button class="loginButton" onclick="window.location.href='./assets/pages/login.html'">LOGIN</button>    
         </div>
     </header>
     <main>
-        <section class="firstHeroSection">
+        <section class="firstHeroSection" id="firstHeroSection">
             <div class="firstHeroContent">
                 <h1><span>TIS</span> LTD. <br> TRAINING & INSPECTION SERVICES</h1>
                 <h3>Established in United Kingdom by a group of Qualified and competent engineers.</h3>
@@ -67,7 +68,7 @@
             </div>
             <div class="sectionDivider"></div>
         </section>
-        <section class="secondHeroSection">
+        <section class="secondHeroSection" id="secondHeroSection">
                 <div class="heroTitle">
                     <h2>API COURSES</h2>
                     <div class="secondHeroButton">
@@ -128,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="thirdSection">
+        <section class="thirdSection" id="thirdHeroSection">
             <div class="thirdSectionContent">
                 <div class="thirdSectionText">
                     <h2><span>TIS</span> LTD.</h2>
@@ -208,7 +209,7 @@
             <div class="sectionDivider"></div>
         </section>
     </main>
-    <footer class="siteFooter">
+    <footer class="siteFooter" id="footer">
         <div class="footerTop">
             <div class="footerBrand">
                 <h2><span>TIS</span> LTD.</h2>
@@ -248,5 +249,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
